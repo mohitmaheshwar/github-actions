@@ -12,5 +12,7 @@ jobs:
           npm -v
       - name: Python Code
         run: |
+          #!/usr/bin/env python3
           import platform
-          print(platform.processor()) 
+          print(platform.processor())
+        shell: python
